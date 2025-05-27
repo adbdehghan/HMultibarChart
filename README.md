@@ -1,5 +1,7 @@
 # MultiBarChart
 
+![multi bar chart](Example/MultibarChartExample/MultibarChartExample/Assets.xcassets/example.png)
+
 A simple, customizable multi-bar chart view for iOS, built with UIKit. Display multiple data series as proportionally sized horizontal bars, with support for an "Other" category for smaller items.
 
 ![Swift Version](https://img.shields.io/badge/Swift-5.7%2B-orange.svg)
