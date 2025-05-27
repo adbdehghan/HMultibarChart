@@ -25,7 +25,7 @@ public struct MultiBarSwiftUIView: UIViewRepresentable {
     // Initializer to pass values from SwiftUI
     public init(items: [BarDataItem],
                 maxVisibleItems: Int = 3,
-                barMargin: CGFloat = 6.0,
+                barMargin: CGFloat = 2.0,
                 barCornerRadius: CGFloat = 2.0,
                 colorPalette: [UIColor] = [.systemBlue, .systemGreen, .systemOrange, .systemRed, .systemPurple],
                 defaultOtherColor: UIColor = .systemGray,
@@ -83,11 +83,11 @@ struct MultiBarSwiftUIView_Previews: PreviewProvider {
 
     static var previews: some View {
         VStack {
-            Text("MultiBarChart in SwiftUI")
+            Text("MultiBarChart")
                 .font(.headline)
             
             MultiBarSwiftUIView(items: sampleData)
-                .frame(height: 100)
+                .frame(height: 60)
                 .padding()
 
             MultiBarSwiftUIView(
@@ -97,12 +97,12 @@ struct MultiBarSwiftUIView_Previews: PreviewProvider {
                     BarDataItem(name: "Gamma", count: 15, color: .purple)
                 ],
                 maxVisibleItems: 2,
-                barMargin: 4,
+                barMargin: 2,
                 labelFont: .systemFont(ofSize: 12, weight: .bold),
                 labelTextColor: .blue,
                 labelHeight: 24
             )
-            .frame(height: 120)
+            .frame(height: 60)
             .padding()
             .background(Color(uiColor: .systemGray6))
             .cornerRadius(10)
